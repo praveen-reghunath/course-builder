@@ -1,6 +1,5 @@
 .CourseInput {
     display: flex;
-    align-items: center;
     flex-wrap: nowrap;
 
     .courseText {
@@ -9,6 +8,7 @@
     }
 
     .btnSubmit {
-        margin-top: 5px;
+        margin-top: 25px;
+        max-height: 55px;
     }
 }

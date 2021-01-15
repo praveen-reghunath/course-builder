@@ -7,4 +7,10 @@
     border: 1px solid var(--primary);
     background-color: var(--white);
     font-weight: 700;
+
+    &:disabled {
+        background-color: var(--gray10);
+        border-color: var(--gray10);
+        color: var(--gray);
+    }
 }

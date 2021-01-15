@@ -14,21 +14,24 @@ function getCompleteSemesterName(semAbbreviation) {
         case "fall":
             semester = Semester.FALL;
             break;
+
         case "w":
         case "winter":
             semester = Semester.WINTER;
             break;
+
         case "su":
-        case "Summer":
+        case "summer":
             semester = Semester.SUMMER;
             break;
-        case "spring":
+
         case "s":
+        case "spring":
             semester = Semester.SPRING;
             break;
 
-            defaut:
-            throw `Unknown semester string ${semAbbreviation}.`;
+        default:
+            semester = null;
     }
 
     return semester;
@@ -40,10 +43,6 @@ function getCompleteYear(yearPart) {
 
     if (year < 1000) {
         year += 2000;
-    }
-
-    if (year < 2000) {
-        throw "Year must be >= 2000";
     }
 
     return year;
@@ -81,7 +80,13 @@ class CourseInfo {
     }
 
     set year(value) {
-        this._year = getCompleteYear(value);
+        const completeYear = getCompleteYear(value);
+        if (completeYear >= 2000) {
+            this._year = completeYear;
+        }
+        else {
+            throw new Error('Year must be >= 2000');
+        }
     }
 
     get semester() {
@@ -89,7 +94,13 @@ class CourseInfo {
     }
 
     set semester(value) {
-        this._semester = getCompleteSemesterName(value);
+        const knownSemester = getCompleteSemesterName(value);
+        if (knownSemester) {
+            this._semester = knownSemester;
+        }
+        else {
+            throw new Error(`Unknown semester string ${value}.`);
+        }
     }
 
     parse(courseString) {

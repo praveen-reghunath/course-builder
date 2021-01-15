@@ -9,6 +9,15 @@
         }
     },
     {
+        "courseString": "CS111 00 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2000
+        }
+    },
+    {
         "courseString": "Language58247152 2018 Fall",
         "course": {
             "department": "Language",

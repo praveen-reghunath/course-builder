@@ -1,21 +1,28 @@
 import React from 'react';
 import style from './TextBox.module.scss';
 
-function TextBox(props) {
-    let { label = '', placeholder = '', className = '', errorMessage = '' } = props;
+function TextBox({ label = '', className = '', errorMessage = '', ...rest }) {
+
     const hasError = (errorMessage.length > 0);
+
     if (hasError) {
-        className += style.error;
+        className += ` ${style.hasError}`;
     }
 
     return (
         <div className={`${style.TextBox} ${className}`}>
             <label className={style.textLabel} for="txt-input" id="input-label">{label}</label>
             <div className={style.inputWrapper}>
-                <input aria-invalid={hasError} id="txt-input" type="text" className={style.text} value="" placeholder={placeholder} aria-describedby="txt-error" />
+                <input aria-invalid={hasError} id="txt-input" type="text" className={style.text} aria-describedby="txt-error" {...rest} />
                 <p className={style.errorText} id="txt-error">
-                    <span>Error: </span>
-                    <span>{errorMessage}</span>
+                    {
+                        hasError && (
+                            <>
+                                <span>Error: </span>
+                                <span>{errorMessage}</span>
+                            </>
+                        )
+                    }
                 </p>
             </div>
         </div>
