@@ -1,0 +1,12 @@
+.CourseInfoItem {
+    display: flex;
+
+    .label {
+        flex-basis: 30%;
+        color: var(--gray);
+    }
+
+    .value {
+        flex-basis: 70%;
+    }
+}

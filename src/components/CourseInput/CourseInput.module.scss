@@ -1,0 +1,14 @@
+.CourseInput {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .courseText {
+        margin-right: .4rem;
+        flex-basis: 100%;
+    }
+
+    .btnSubmit {
+        margin-top: 5px;
+    }
+}

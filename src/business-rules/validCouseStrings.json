@@ -1,0 +1,254 @@
+[
+    {
+        "courseString": "CS111 2018 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "Language58247152 2018 Fall",
+        "course": {
+            "department": "Language",
+            "courseNumber": 58247152,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS:111 2018 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS 111 2018 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS-111 Fall 2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "Math 123 2015 Spring",
+        "course": {
+            "department": "Math",
+            "courseNumber": 123,
+            "semester": "Spring",
+            "year": 2015
+        }
+    },
+    {
+        "courseString": "CS111 Fall 2018",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS 111 Fall 2018",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS:111 Fall 2018",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS-111 Fall 2018",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS111 fall 18",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS 111 fall 18",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS:111 fall 18",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS-111 fall 18",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2018
+        }
+    },
+    {
+        "courseString": "CS111 2016 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS 111 2016 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS:111 2016 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS-111 2016 Fall",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS111 F2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS 111 F2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS111 F16",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS 111 F16",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS:111 F2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS-111 F2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS111 Fall2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS 111 Fall2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS:111 Fall2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    },
+    {
+        "courseString": "CS-111 Fall2016",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2016
+        }
+    }
+]

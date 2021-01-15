@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: 5vh auto 0 auto;
+
+  &>* {
+    flex-basis: 100%;
+  }
+}
