@@ -4,7 +4,7 @@ import style from './Button.module.scss';
 function Button(props) {
     const { children, className = '', ...rest } = props;
     return (
-        <button className={`${style.Button} ${className}`} tabindex="0" type="button" {...rest} >
+        <button className={`${style.Button} ${className}`} tabIndex="0" {...rest} >
             {children}
         </button>
     );
