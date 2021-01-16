@@ -44,7 +44,7 @@ function App() {
     <main className={style.App}>
       <CourseInput className={style.courseInput} errorMessage={parseError} courseString={courseString} onChange={onCourseStringChange} onSubmit={onSubmit} />
       {
-        courseList.map(course => <CourseView className={style.courseView} course={course} />)
+        courseList.map(course => <CourseView key={course.id} className={style.courseView} course={course} />)
       }
     </main>
   );

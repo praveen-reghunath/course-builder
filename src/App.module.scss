@@ -1,7 +1,7 @@
 .App {
   display: flex;
   flex-wrap: wrap;
-  max-width: 650px;
+  width: 90vw;
   margin: 5vh auto 0 auto;
 
   &>* {
@@ -11,6 +11,16 @@
   .courseView,
   .courseInput {
     margin-bottom: .5rem;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: 70vw;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    width: 40vw;
   }
 
 }

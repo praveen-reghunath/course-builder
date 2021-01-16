@@ -50,12 +50,14 @@ function getCompleteYear(yearPart) {
 
 class CourseInfo {
     constructor(course) {
+        this.id = Math.round(Math.random() * 1000000);
         if (course instanceof CourseInfo) {
-            const { department, courseNumber, year, semester } = course;
+            const { department, courseNumber, year, semester, id } = course;
             this.department = department;
             this.courseNumber = courseNumber;
             this.year = year;
             this.semester = semester;
+            this.id = id;
         }
     }
 

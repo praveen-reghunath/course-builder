@@ -11,8 +11,8 @@ function TextBox({ label = '', className = '', errorMessage = '', ...rest }) {
 
     return (
         <div className={`${style.TextBox} ${className}`}>
-            <label className={style.textLabel} htmlFor="txt-input" id="input-label">{label}</label>
-            <div className={style.inputWrapper}>
+            <label htmlFor="txt-input" id="input-label">{label}</label>
+            <div>
                 <input aria-invalid={hasError} id="txt-input" type="text" className={style.text} aria-describedby="txt-error" {...rest} />
                 <p className={style.errorText} id="txt-error">
                     {
