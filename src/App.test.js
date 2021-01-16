@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('should render without error', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Submit/i);
-  expect(linkElement).toBeInTheDocument();
+  const submitButton = screen.getByText(/Submit/i);
+  expect(submitButton).toBeInTheDocument();
 });

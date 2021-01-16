@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Button from "../Button";
-import TextBox from "../TextBox";
+import Button from '../Button';
+import TextBox from '../TextBox';
 
 import style from './CourseInput.module.scss';
 

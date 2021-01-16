@@ -3,8 +3,8 @@ import TextBox from './TextBox';
 
 test('renders label', () => {
     render(<TextBox label="course" />);
-    const textElement = screen.getByText(/course/i);
-    expect(textElement).toBeInTheDocument();
+    const label = screen.getByText(/course/i);
+    expect(label).toBeInTheDocument();
 });
 
 test('renders css class assigned', () => {
@@ -12,7 +12,7 @@ test('renders css class assigned', () => {
     expect(container.firstChild).toHaveClass('testClass');
 });
 
-test('renders css class assigned', () => {
+test('renders error message', () => {
     render(<TextBox label="course" className="testClass" errorMessage="errMsg" />);
     const errorMessage = screen.getByText(/errMsg/i);
     expect(errorMessage).toBeInTheDocument();

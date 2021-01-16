@@ -1,3 +1,3 @@
-import CourseView from "./CourseView";
+import CourseView from './CourseView';
 
 export default CourseView;

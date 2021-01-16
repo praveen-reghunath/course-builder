@@ -5,9 +5,10 @@ import CourseInfoItem from '../CourseInfoItem';
 
 function CourseView({ course, className = '' }) {
     const { department, courseNumber, year, semester } = course;
+    const headingText = `${department} ${courseNumber}`;
     return (
         <section className={classNames(style.CourseView, className)}>
-            <h6 className={style.heading}>{`${department} ${courseNumber}`}</h6>
+            <h6 className={style.heading}>{headingText}</h6>
             <div className={style.details}>
                 <CourseInfoItem label="Department" value={department} />
                 <CourseInfoItem label="Course" value={courseNumber} />

@@ -1,4 +1,6 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import style from './TextBox.module.scss';
 
 function TextBox({ label = '', className = '', errorMessage = '', ...rest }) {
@@ -10,7 +12,7 @@ function TextBox({ label = '', className = '', errorMessage = '', ...rest }) {
     }
 
     return (
-        <div className={`${style.TextBox} ${className}`}>
+        <div className={classNames(style.TextBox, className)}>
             <label htmlFor="txt-input" id="input-label">{label}</label>
             <div>
                 <input aria-invalid={hasError} id="txt-input" type="text" className={style.text} aria-describedby="txt-error" {...rest} />

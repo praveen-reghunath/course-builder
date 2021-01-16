@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import CourseInput from './components/CourseInput';
-import CourseView from "./components/CourseView";
+import CourseView from './components/CourseView';
 import CourseInfo from './business-rules/CourseInfo';
 
 import style from './App.module.scss';

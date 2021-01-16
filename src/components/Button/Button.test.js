@@ -3,11 +3,11 @@ import Button from './Button';
 
 test('renders button text', () => {
     render(<Button >Test</Button>);
-    const linkElement = screen.getByText(/Test/i);
-    expect(linkElement).toBeInTheDocument();
+    const button = screen.getByText(/Test/i);
+    expect(button).toBeInTheDocument();
 });
 
-test('renders button class', () => {
+test('renders button css class', () => {
     const { container } = render(<Button className="TheCSSClass" >Test</Button>);
     expect(container.firstChild).toHaveClass('TheCSSClass')
 });

@@ -1,4 +1,4 @@
 
-import CourseInfoItem from "./CourseInfoItem";
+import CourseInfoItem from './CourseInfoItem';
 
 export default CourseInfoItem;
