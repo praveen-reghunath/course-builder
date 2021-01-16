@@ -1,7 +1,15 @@
 
-import CourseInfo, { Semester } from './CourseInfo';
+import CourseInfo from './CourseInfo';
 import validCourseStrings from './validCouseStrings.json'
-import inValidCourseStrings from './validCouseStrings.json'
+import inValidCourseStrings from './inValidCourseStrings.json'
+
+function throwIfNotMatchingTo(received, expected, errorMessage) {
+    return () => {
+        if (received !== expected) {
+            throw new Error(errorMessage);
+        }
+    }
+}
 
 test('Should not parse string "CS" ', () => {
     const course = new CourseInfo();
@@ -28,13 +36,19 @@ test('Should parse valid course string', () => {
 
 });
 
-test('Should not parse some of the known invalid course string', () => {
+test('Should not parse some of the known invalid course strings', () => {
 
     const course = new CourseInfo();
 
-    inValidCourseStrings.forEach(courseString => {
-        const result = course.parse(courseString);
-        expect(result).toBe(false);
+    inValidCourseStrings.forEach(testData => {
+        let result = true;
+        try {
+            result = course.parse(testData.courseString);
+        }
+        catch (ex) {
+            result = false;
+        }
+        expect(throwIfNotMatchingTo(result, false, testData.description)).not.toThrow();
     });
 
 });

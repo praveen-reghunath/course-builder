@@ -18,6 +18,69 @@
         }
     },
     {
+        "courseString": "CS111 2011 Winter",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Winter",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 Spring",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Spring",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 Summer",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Summer",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 f",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Fall",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 w",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Winter",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 s",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Spring",
+            "year": 2011
+        }
+    },
+    {
+        "courseString": "CS111 2011 su",
+        "course": {
+            "department": "CS",
+            "courseNumber": 111,
+            "semester": "Summer",
+            "year": 2011
+        }
+    },
+    {
         "courseString": "Language58247152 2018 Fall",
         "course": {
             "department": "Language",

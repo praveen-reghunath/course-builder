@@ -1,11 +1,81 @@
 [
-    "CS:111 1918 Fall",
-    "CS111 201 Fall",
-    "CS:111 20182 Fall",
-    "CS 111 2 Fall",
-    "CS-111 Fall 201",
-    "CS-111 Fall201",
-    "CS-111 Fall20132",
-    "CS-111 Fall2",
-    "CS111 Fall"
+    {
+        "courseString": "abcd",
+        "description": "Should not parse a random string"
+    },
+    {
+        "courseString": null,
+        "description": "Should not parse null"
+    },
+    {
+        "description": "undefined cannot be parsed"
+    },
+    {
+        "courseString": "CS:111 1918 Fall",
+        "description": "Year cannot be less than 2000"
+    },
+    {
+        "courseString": "CS111 201 Fall",
+        "description": "3 digit year string"
+    },
+    {
+        "courseString": "CS:111 20182 Fall",
+        "description": "5 digit year string"
+    },
+    {
+        "courseString": "CS 111 2 Fall",
+        "description": "Single digit year string"
+    },
+    {
+        "courseString": "CS-111 Fall 201",
+        "description": "3 digit year string comes after semester"
+    },
+    {
+        "courseString": "CS-111 Fall201",
+        "description": "3 digit year together with Semester"
+    },
+    {
+        "courseString": "CS-111 Fall20132",
+        "description": "5 digit year string together with Semester"
+    },
+    {
+        "courseString": "CS-111 Fall2",
+        "description": "Single digit year string together with semester"
+    },
+    {
+        "courseString": "CS111 Fall",
+        "description": "No year string"
+    },
+    {
+        "courseString": "CS Fall 2020",
+        "description": "No course number"
+    },
+    {
+        "courseString": "123 Fall 2020",
+        "description": "No department"
+    },
+    {
+        "courseString": "Fall 2020",
+        "description": "No department & course no"
+    },
+    {
+        "courseString": "65465CS Fall 2020",
+        "description": "Department & course no swapped"
+    },
+    {
+        "courseString": "CS-111 Quick2013",
+        "description": "Wrong Semester name"
+    },
+    {
+        "courseString": "CS-111 Fall",
+        "description": "No year"
+    },
+    {
+        "courseString": "CS-111",
+        "description": "No year and Semester"
+    },
+    {
+        "courseString": "CS111 2011 sux",
+        "description": "Wrong Semester"
+    }
 ]
