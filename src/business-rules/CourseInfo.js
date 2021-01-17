@@ -7,7 +7,7 @@ export const Semester = Object.freeze({
 });
 
 function getCompleteSemesterName(semAbbreviation) {
-    semAbbreviation = semAbbreviation.toLowerCase();
+    semAbbreviation = (semAbbreviation || '').toLowerCase();
     let semester;
     switch (semAbbreviation) {
         case "f":
@@ -37,7 +37,7 @@ function getCompleteSemesterName(semAbbreviation) {
     return semester;
 }
 
-function getCompleteYear(yearPart) {
+function getFullYear(yearPart) {
 
     let year = Number(yearPart);
 
@@ -82,9 +82,9 @@ class CourseInfo {
     }
 
     set year(value) {
-        const completeYear = getCompleteYear(value);
-        if (completeYear >= 2000) {
-            this._year = completeYear;
+        const fullYear = getFullYear(value);
+        if (fullYear >= 2000) {
+            this._year = fullYear;
         }
         else {
             throw new Error('Year must be >= 2000');
